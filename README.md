@@ -10,7 +10,7 @@
 
 - HTML
 
-- CSS
+- CSS/SASS
 
 - JS
 
