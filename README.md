@@ -13,7 +13,7 @@
 
 [:point_right: Click here to see on browser](https://kaplanh.github.io/horoscope_app/)
 
-![Tour Places](tour-project.gif)
+[Tour Places](tour-project.gif)
 
 ---
  **What's used in this app ?** |  **Author** |
