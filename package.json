@@ -1,6 +1,6 @@
 {
     "homepage": "https://kaplanh.github.io/Tour-Places",
-    "name": "solution",
+    "name": "tourplaces",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
