@@ -1,22 +1,18 @@
-
-
 const Card = (data) => {
-    console.log("ne geliyo", data);
-    const {id,title,image,desc} = data;
-    return(
-        <div className="cards">
+    // console.log("ne geliyo", data);
+    const { id, title, image, desc } = data;
+    return (
+        <div key={id} className="cards">
             <div className="title">
                 <h1>{title}</h1>
             </div>
             <img src={image} alt="" />
 
             <div className="card-over">
-                <p>
-                    {desc}
-                </p>
+                <p>{desc}</p>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Card;
