@@ -1,16 +1,5 @@
 # Tour Places 
 
-
-
-
-
-
-
-
-
-
-
-
 [:point_right: Click here to see on browser](https://kaplanh.github.io/horoscope_app/)
 
 [Tour Places](tour-project.gif)
