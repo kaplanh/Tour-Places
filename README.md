@@ -21,7 +21,7 @@
 |React - props| |[Visit me on Linkedin](https://www.linkedin.com/in/kaplan-h/)|
 |React -  [sass](https://sass-lang.com/) |npm i sass or yarn add sass:[^1] | |      
 |Deploy with [Vercel](https://vercel.com/dashboard) | |   |
-  [^1]: + App.js de bu sekilde import edilmeli import "bootstrap/dist/css/bootstrap.css";
+  [^1]: + App.js de bu sekilde import edilmeli import './App.scss';
   
 
 ---
