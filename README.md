@@ -2,7 +2,7 @@
 
 [:point_right: Click here to see on browser](https://kaplanh.github.io/Tour-Places/)
 
-[Tour Places](tour-project.gif)
+![tour places](https://github.com/kaplanh/Tour-Places/assets/101884444/b0871b9c-3f5e-4146-85f1-27794dffc3e2)
 
 ---
  **What's used in this app ?** |  **Author** |
