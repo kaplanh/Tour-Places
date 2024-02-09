@@ -318,36 +318,36 @@ Horoscope App(folder)
 
   
     .cards {
-        width: 500px;
-        height: 350px;
-        position: relative;
-        overflow: hidden;        
-        &:hover .card-over {
-            transform: translate(0%);
-        }
-        &:hover img {
-            opacity: 1;
-        }
+            width: 500px;
+            height: 350px;
+            position: relative;
+            overflow: hidden;        
+            &:hover .card-over {
+                transform: translate(0%);
+            }
+            &:hover img {
+                opacity: 1;
+            }
 
-    .card-over {
-        width: 500px;        
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        font-size: 1.5rem;
-        z-index: 3;
-        padding: 1rem;
-        transform: translateY(100%);
-        transition: transform 0.7s;
-        max-height: 75%;
-        overflow: auto;
-        // ?scrollbari kaybetmek icin
-        &::-webkit-scrollbar{
-            display: none;
-        }
-  
-    }
+        .card-over {
+            width: 500px;        
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            font-size: 1.5rem;
+            z-index: 3;
+            padding: 1rem;
+            transform: translateY(100%);
+            transition: transform 0.7s;
+            max-height: 75%;
+            overflow: auto;
+            // ?scrollbari kaybetmek icin
+            &::-webkit-scrollbar{
+                display: none;
+                             }  
+               }
+      }
   ~~~
 
   
