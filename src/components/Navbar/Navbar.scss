@@ -1,6 +1,8 @@
 @import '../../scss/variables', '../../scss/mixins';
 
 .navbar{
+    position;fixed;
+    top:0;
     background-color: $cardNavBgColor;
     display: flex;
     justify-content: space-evenly;
