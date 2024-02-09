@@ -11,6 +11,17 @@
 |React - props|[Visit me on Linkedin](https://www.linkedin.com/in/kaplan-h/)|
 |React - sass||    
 |Deploy with GitHub Pages | |   
+
+
+
+
+**What's used in this app ?** |**How use third party libraries**|  **Author** |
+|----------|--|------------|
+|React - component| |[Take a look at my portfolio](https://kaplanh.github.io/Portfolio_with_CssFlex/)|
+|React - props| |[Visit me on Linkedin](https://www.linkedin.com/in/kaplan-h/)|
+|React -  [sass](https://sass-lang.com/) |npm i sass or yarn add sass:[^1] | |      
+|Deploy with [Vercel](https://vercel.com/dashboard) | |   |
+  [^1]: + App.js de bu sekilde import edilmeli import "bootstrap/dist/css/bootstrap.css";
   
 
 ---
