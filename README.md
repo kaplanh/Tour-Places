@@ -313,7 +313,7 @@ Horoscope App(folder)
 
   ```
 
-  ~~~css
+  ~~~scss
 
 
   
@@ -328,8 +328,6 @@ Horoscope App(folder)
         &:hover img {
             opacity: 1;
         }
-
-
 
     .card-over {
         width: 500px;        
