@@ -5,22 +5,13 @@
 ![tour places](https://github.com/kaplanh/Tour-Places/assets/101884444/b0871b9c-3f5e-4146-85f1-27794dffc3e2)
 
 ---
- **What's used in this app ?** |  **Author** |
-|----------|------------|
-|React - component |[Take a look at my portfolio](https://kaplanh.github.io/Portfolio_with_CssFlex/)|
-|React - props|[Visit me on Linkedin](https://www.linkedin.com/in/kaplan-h/)|
-|React - sass||    
-|Deploy with GitHub Pages | |   
-
-
-
-
+ 
 **What's used in this app ?** |**How use third party libraries**|  **Author** |
 |----------|--|------------|
 |React - component| |[Take a look at my portfolio](https://kaplanh.github.io/Portfolio_with_CssFlex/)|
 |React - props| |[Visit me on Linkedin](https://www.linkedin.com/in/kaplan-h/)|
 |React -  [sass](https://sass-lang.com/) |npm i sass or yarn add sass:[^1] | |      
-|Deploy with [Vercel](https://vercel.com/dashboard) | |   |
+|Deploy with GitHub Pages | |   |
   [^1]: + App.js de bu sekilde import edilmeli import './App.scss';
   
 
