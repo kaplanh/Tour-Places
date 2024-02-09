@@ -1,6 +1,6 @@
 # Tour Places 
 
-[:point_right: Click here to see on browser](https://kaplanh.github.io/horoscope_app/)
+[:point_right: Click here to see on browser](https://kaplanh.github.io/Tour-Places/)
 
 [Tour Places](tour-project.gif)
 
@@ -88,15 +88,18 @@ Horoscope App(folder)
 |    |       |── header(folder)
 │    │       |     ├── Header.jsx
 │    │       |     ├── Header.scss
+│    │       |     ├── Header.css
 │    │       |
 |    |       |── main(folder)
 │    │       |     ├── Main.jsx
 │    │       |     ├── Main.scss
+│    │       |     ├── Main.css
 │    │       |     ├── Card.jsx
 │    │       |
 |    |       |── navbar(folder)
 │    │             ├── Navbar.jsx
 │    │             ├── Navbar.scss
+│    │             ├── Navbar.css
 │    │
 |    |--- helper (folder)
 |    |       |── data.js
@@ -110,6 +113,7 @@ Horoscope App(folder)
 |    |       
 │    ├--- App.js
 │    ├--- App.scss
+│    ├--- App.css
 │    │--- data.js
 │    └--- index.js
 │
@@ -125,7 +129,7 @@ Horoscope App(folder)
 ### At the end of the project, the following topics are to be covered;
 
 - sass with react
-  ```
+  ```scss
    // src/scss/_reset.scss
       * {
         margin: 0;
@@ -135,11 +139,8 @@ Horoscope App(folder)
 
    // src/scss/_variables.scss
        //? Colors
-      $navyBlue: #042940;
-      $darkGreen: #005c53;
-      $olive: #9fc131;
-      $neon: #dbf227;
-      $beige: #d6d58e;
+     $backgroundColor:#ace0f9;
+     $cardNavBgColor: #171b20;
   
    // src/scss/_mixins.scss
     @mixin media-xsm {
@@ -160,25 +161,20 @@ Horoscope App(folder)
   
    // src/scss/app.scss
   
-    @import "reset", "variables","mixins";
-    body {
-        background-color:$beige;
-        text-align: center;
-        }
+  @import './scss/reset', './scss/variables';
 
-   // src/components/navbar/Navbar.scss
-  
-    @import "../../scss/mixins";
-
-  @include media-lg{
-    .header{
-        margin-top: 10rem;
-    }
-  }
-
-  
-   // src/App.jsx
-     import "./scss/app.scss";
+      @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+      
+      @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+      
+      body{
+          background-color: $backgroundColor;
+          font-family: 'Amatic SC', cursive;
+      }
+      
+      p{
+          font-family: 'Hubballi', cursive;
+      }
 
   ```
    
@@ -186,7 +182,7 @@ Horoscope App(folder)
 
 
 - Parent Component icinde json datayi map() leme
-   ```
+   ```jsx
    // src/components/main/Main.jsx Parent component
    
          import { data } from "../../helpers/data";
@@ -214,24 +210,24 @@ Horoscope App(folder)
 
    // src/components/main/Card.jsx Child component
    
-       const Card = ({ title, date, image, desc }) => {
-        // const { title, date, image, desc } = props;
-        // console.log("ne geliyor", props);
-        return (
-            <div className="cards">
-                <div className="title">
-                    <h1>{title}</h1>
-                </div>
-                <div className="date">
-                    <h2>{date}</h2>
-                </div>
-                <img src={image} alt="" />
-                <div className="card-over">
-                    <p>{desc}</p>
-                </div>
+       const Card = (data) => {
+    // console.log("ne geliyo", data);
+    const { id, title, image, desc } = data;
+    return (
+        <div key={id} className="cards">
+            <div className="title">
+                <h1>{title}</h1>
             </div>
-        );
-    };
+            <img src={image} alt="" />
+
+            <div className="card-over">
+                <p>{desc}</p>
+            </div>
+        </div>
+    );
+  };
+  
+  export default Card;
 
   ```
    ---
